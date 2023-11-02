@@ -1,0 +1,99 @@
+body{
+
+    background-image: linear-gradient(
+          rgb(59,88,93),
+          rgb(29, 40, 42)
+    ) ;
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+button{
+
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: inherit;
+}
+
+#below-cover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+#button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.button{
+    font-size: 1.5em;
+}
+.button-navegat{
+
+    font-size: 2em;
+}
+.button-bigist{
+
+    font-size:3em;
+}
+#cove{
+    width: 300px; 
+    border-style:groove;
+    border-color: white;
+}
+#play-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0em 3em 0em;
+    font-weight: bolder;
+    font-size: medium;
+
+}
+#song-name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.lite-color{
+    color: rgb(139, 153, 156);
+}
+#progressbar{
+    background-color: rgb(139, 153, 156);
+    border-radius: 15em;
+    height: 3px;
+    width: 100%;
+ 
+    
+}
+#corrent-progress{
+--progress:0%;    
+height: inherit;
+border-radius: inherit;
+background-color: white;
+width: var(--progress);
+cursor:inherit;
+
+}
+#songTo{
+
+padding-bottom: 1em;
+padding-top:1em;
+
+}
+.button-active{
+
+    color: rgb(5, 164, 5);
+   
+}

@@ -1,0 +1,7 @@
+Shuffle
+Repeat
+Pause
+Fast forward
+Play
+Skip end fill
+Stop

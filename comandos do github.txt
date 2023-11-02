@@ -1,0 +1,13 @@
+    Comandos de envio para github
+
+-adiciona arquivos para area de tranferencia
+git add .
+
+-verifica os estatus(se tem arquivos de fato para serem enviados)
+git status
+
+-salva e prepara arquivos para serem enviados
+git commit -m "mensagem do commit"
+
+-envia arquivos para o github
+git puhs

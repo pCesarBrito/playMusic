@@ -97,3 +97,10 @@ padding-top:1em;
     color: rgb(5, 164, 5);
    
 }
+.by-name{
+border-color: white;
+display: block;
+justify-content: right;
+font-size: 5pt;
+
+}

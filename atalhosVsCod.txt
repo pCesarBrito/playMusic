@@ -5,5 +5,4 @@ ALT + Shift + seta para baixo "cursor no final da linha" duplica a linha.
 
 https://pcesarbrito.githu
 
-
-https://famous-starlight-2f0dc5.netlify.app/
+https://bejewelled-toffee-334bfb.netlify.app/

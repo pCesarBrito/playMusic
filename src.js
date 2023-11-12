@@ -1,6 +1,10 @@
 
 
-
+const principedapaz={
+    musica:'Príncipe da Paz',
+    artista:'Paulo César ',
+    arquivo:'principe_da_paz' 
+};
 
 const aeleagloria={
     musica:'A Ele a Glória',
@@ -124,7 +128,7 @@ const Deusprovera={
 
 
 
-export const originalPlayList=[atos2,aeleagloria,ACASAESUA,caminhonodeserto,
+export const originalPlayList=[atos2,principedapaz,aeleagloria,ACASAESUA,caminhonodeserto,
  ocarpinteiro,algonovo,alivio,raridade,tachorandoporque,onome,Deusprovera,
 todasascoisa, oleao,quandoomundocai,meatraiu,lugarsecreto,eunavegarei, acasaesua,lindoes];
 export let sortdPlayListTwo = [...originalPlayList];

@@ -16,6 +16,8 @@ const correntProgress=document.querySelector('#corrent-progress');
 const Progresscontainer=document.querySelector('#songTo');
 const shuffleButton=document.querySelector('#shuffle');
 const repeatButton= document.querySelector('#repeat');
+const songtime=document.querySelector('#song-time');
+const totaltime=document.getElementById('total-time');
 
 
 
@@ -105,6 +107,9 @@ function upDateBar(){
     const barWiht=(song.currentTime/song.duration)*100;
     correntProgress.style.setProperty('--progress', `${barWiht}%`);
 
+/// atualiza contador da musica
+    songtime.innerText=toFormateTime(song.currentTime);
+
 };
 
 
@@ -175,6 +180,8 @@ function jumpTo(event){
 
    };
 
+
+
   function nextOrRepeat(){
 
     if(repetOn===false){
@@ -186,6 +193,25 @@ function jumpTo(event){
 
   };
 
+
+  function toFormateTime(originalnumber){
+
+    let hours=Math.floor(originalnumber/3600);
+    let minuts= Math.floor((originalnumber-hours*3600)/60);
+     let secunds=Math.floor(originalnumber-hours*3600-minuts*60);
+
+     return `${hours.toString().padStart(2,'0')}:${minuts.toString().padStart(2,'0')}: ${secunds.toString().padStart(2,'0')}`;
+  };
+
+  function upDateCurrentTime(){
+  
+  };
+
+  function upDateTotalTime(){
+ 
+    totaltime.innerText=toFormateTime(song.duration);
+  };
+
  
 
 loudSong();
@@ -195,6 +221,7 @@ previous.addEventListener('click',previousSong);
 next.addEventListener('click',nextSong);
 song.addEventListener('timeupdate',upDateBar);
 song.addEventListener('ended',nextOrRepeat);
+song.addEventListener('loadedmetadata',upDateTotalTime);
 Progresscontainer.addEventListener('click',jumpTo);
 shuffleButton.addEventListener('click',()=>{
 

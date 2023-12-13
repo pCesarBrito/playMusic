@@ -104,3 +104,11 @@ justify-content:right;
 font-size:14px;
 margin-top: 1em;
 }
+#time-box{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+font-size: smaller;
+margin-top: 0.5em;
+
+}

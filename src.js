@@ -3,13 +3,15 @@
 const principedapaz={
     musica:'Príncipe da Paz',
     artista:'Paulo César ',
-    arquivo:'principe_da_paz' 
+    arquivo:'principe_da_paz',
+    liked:true
 };
 
 const aeleagloria={
     musica:'A Ele a Glória',
     artista:'Gabriela Rocha',
-    arquivo:'aele_a_gloria' 
+    arquivo:'aele_a_gloria', 
+    liked:false
 };
 
 
@@ -18,7 +20,9 @@ const aeleagloria={
 const atos2={
     musica:'Atos 2',
     artista:'Gabriela Rocha',
-    arquivo:'atos2' 
+    arquivo:'atos2', 
+    liked:false
+
 };
 
 
@@ -26,7 +30,8 @@ const atos2={
 const ACASAESUA={
     musica:'A casa é sua',
     artista:'WORSHIP',
-    arquivo:'A_CASAE_SUA' 
+    arquivo:'A_CASAE_SUA' , 
+    liked:false
 };
 
 
@@ -41,27 +46,31 @@ const ACASAESUA={
 const ocarpinteiro={
     musica:'O Carpinteiro',
     artista:'Alessandro Vilas Boas',
-    arquivo:'o_carpinteiro' 
+    arquivo:'o_carpinteiro', 
+    liked:false
 };
 
 
 const algonovo={
     musica:'Algo Novo',
     artista:'Kemuel',
-    arquivo:'algo_novo' 
+    arquivo:'algo_novo', 
+    liked:false 
 };
 
 const alivio={
     musica:'Alívio',
     artista:'José Aguiar',
-    arquivo:'alivio' 
+    arquivo:'alivio' , 
+    liked:false
 };
 
 
 const raridade={
     musica:'Raridade',
     artista:'Anderson Freire',
-    arquivo:'raridade' 
+    arquivo:'raridade' , 
+    liked:false
 };
 
 
@@ -69,61 +78,72 @@ const tachorandoporque={
     musica:'Ta chorando por que?',
     artista:'Amanda Wanessa',
     arquivo:'ta_chorando_porque', 
+    liked:false
 };
 
 
 const oleao={
     musica:'O Leão',
     artista:'Victo Rodrigues',
-    arquivo:'o_leao' 
+    arquivo:'o_leao', 
+    liked:false
 };
 
 const acasaesua={
     musica:' A Casa é Sua',
     artista:'Gabriela Rocha',
-    arquivo:'a_casa_e_sua'
+    arquivo:'a_casa_e_sua', 
+    liked:false
 };
 const eunavegarei={
     musica:'Eu Navegarei',
     artista:'Gabriela Rocha' ,
-    arquivo:'eu_navegarei' 
+    arquivo:'eu_navegarei', 
+    liked:false
 };
 const lugarsecreto={
     musica:'Lugar Secreto',
     artista:'Gabriela Rocha' ,
-    arquivo:'lugar_secreto' 
+    arquivo:'lugar_secreto', 
+    liked:false 
 };
 const meatraiu={
     musica:'Me Atraiu',
     artista:'Gabriela Rocha',
-    arquivo:'me_atraiu' 
+    arquivo:'me_atraiu', 
+    liked:false
 };
 
 const quandoomundocai={
     musica:'Quando o mundo Cai',
     artista:'Juliano Son',
-    arquivo:'quando_o_mundo_cai' 
+    arquivo:'quando_o_mundo_cai' , 
+    liked:false
 };
 
 const lindoes={
     musica:'Lindo és',
     artista:'Juliano Son',
-    arquivo:'lindo_es' 
+    arquivo:'lindo_es', 
+    liked:false
 };
 const todasascoisa={
     musica:'Todas as coisa',
     artista:'Fernandinho',
-    arquivo:'todas_as_coisas' 
+    arquivo:'todas_as_coisas', 
+    liked:false 
 };
 const onome={
     musica:'O Nome',
     artista:'Gabriela Gomes/ Luma Alipio',
-    arquivo:'o_nome' 
+    arquivo:'o_nome', 
+    liked:false
 };
 const Deusprovera={
     musica:'Deus proverá',
     artista:'Gabriela Gomes',
-    arquivo:'Deus_provera' 
+    arquivo:'Deus_provera', 
+    liked:false 
 };
 
 

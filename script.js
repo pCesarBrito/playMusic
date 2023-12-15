@@ -220,6 +220,21 @@ function jumpTo(event){
     totaltime.innerText=toFormateTime(song.duration);
   };
 
+  function buttonRender(){
+    if(sortdPlayListTwo[index].liked===true){
+        like.querySelector('.bi').classList.remove('bi-heart');
+        like.querySelector('.bi').classList.add('bi-suit-heart-fill');
+        like.classList.add('button-activ');
+    }
+    else{
+        like.querySelector('.bi').classList.add('bi-heart');
+        like.querySelector('.bi').classList.remove('bi-suit-heart-fill');
+        like.classList.add('');
+
+    };
+
+  };
+
  
 
 loudSong();
@@ -231,6 +246,7 @@ song.addEventListener('timeupdate',upDateBar);
 song.addEventListener('ended',nextOrRepeat);
 song.addEventListener('loadedmetadata',upDateTotalTime);
 Progresscontainer.addEventListener('click',jumpTo);
+like.addEventListener('click',buttonRender);
 shuffleButton.addEventListener('click',()=>{
 
     if(isShuffled === false){

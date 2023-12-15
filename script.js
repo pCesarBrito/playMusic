@@ -200,7 +200,15 @@ function jumpTo(event){
     let minuts= Math.floor((originalnumber-hours*3600)/60);
      let secunds=Math.floor(originalnumber-hours*3600-minuts*60);
 
-     return `${hours.toString().padStart(2,'0')}:${minuts.toString().padStart(2,'0')}: ${secunds.toString().padStart(2,'0')}`;
+
+    if(originalnumber >= 3600)
+    {
+        return `${hours.toString().padStart(2,'0')}:${minuts.toString().padStart(2,'0')}:${secunds.toString().padStart(2,'0')}`;
+    }
+    else
+    {
+        return `${minuts.toString().padStart(2,'0')}:${secunds.toString().padStart(2,'0')}`;
+    }
   };
 
   function upDateCurrentTime(){

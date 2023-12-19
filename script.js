@@ -15,7 +15,7 @@ const previous =document.querySelector('#previous');
 const correntProgress=document.querySelector('#corrent-progress');
 const Progresscontainer=document.querySelector('#songTo');
 const shuffleButton=document.querySelector('#shuffle');
-const repeatButton= document.querySelector('#repeat');
+const repeatButton= document.getElementById('repeat');
 const songtime=document.querySelector('#song-time');
 const totaltime=document.getElementById('total-time');
 
@@ -65,9 +65,7 @@ function loudSong(){
         song.src=`songs/${sortdPlayListTwo[index].arquivo}.mp3`;
         songName.innerText=`${sortdPlayListTwo[index].musica}`;
         bandNamr.innerText=`${sortdPlayListTwo[index].artista}`;
-
-
-           
+                
 };
 
 function previousSong(){
@@ -87,18 +85,16 @@ function previousSong(){
 
 function nextSong(){
     if( index===sortdPlayListTwo.length-1){
-        index=0;
-       
+        index=0;   
     }
     else{
         index +=1;
        
     }
-      
         
     loudSong();
     playSong();
-    
+
 };  
 
 function upDateBar(){
@@ -221,7 +217,7 @@ function jumpTo(event){
   };
 
   function buttonRender(){
-    if(sortdPlayListTwo[index].liked===true){
+    if(sortdPlayListTwo[index].liked===false){
         like.querySelector('.bi').classList.remove('bi-heart');
         like.querySelector('.bi').classList.add('bi-suit-heart-fill');
         like.classList.add('button-activ');
@@ -229,7 +225,6 @@ function jumpTo(event){
     else{
         like.querySelector('.bi').classList.add('bi-heart');
         like.querySelector('.bi').classList.remove('bi-suit-heart-fill');
-        like.classList.add('');
 
     };
 
@@ -256,11 +251,14 @@ shuffleButton.addEventListener('click',()=>{
        
     }
    else{
-    isShuffled = false;
+
+     isShuffled = false;
+     shuffleButton.classList.remove('button-active');
     sortdPlayListTwo = [...originalPlayList];  
-    shuffleButton.classList.remove('button-active');
    
-    }
+   
+    
+    };
 });
 repeatButton.addEventListener('click',repeatButtonClick)
 

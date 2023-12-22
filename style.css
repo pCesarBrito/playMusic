@@ -112,3 +112,48 @@ justify-content: space-between;
 font-size: smaller;
 margin-top: 0.5em;
 }
+
+/* css da págia listar musicas______________________________________________________________
+*/
+#pri-container{
+
+ display: flex;
+ flex-direction: row;
+ justify-content: right;
+ width: 100%;
+background-color:yellowgreen;
+padding: 1em 2cqw 1em 1em;
+
+}
+
+#container{
+
+    display: flex;
+    flex-direction:column;
+    justify-items: left;
+    background-color:red;
+    width:100%;
+  margin-top: 1cqmax;
+
+}
+
+#list-img{
+display: flex;
+flex-direction: column;
+
+}
+#list-img img{
+    width:60px;
+}
+.info-list{
+display: flex;
+flex-direction:row;
+justify-content:space-around;
+align-items: center;
+background-color:black;
+margin:2em 1em 1em 1em;
+border-style:ridge;
+border-color: aliceblue;
+background-size: 1em;
+
+}
